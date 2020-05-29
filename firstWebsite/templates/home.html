@@ -1,0 +1,19 @@
+<!-- this sends the component to the nav HTML -->
+
+{%extends "nav.html"%}
+{%block content%}
+<div class="home">
+    <h1>My Home Page</h1>
+<p>This is my home page</p>
+<a href="http://127.0.0.1:5000/about/">About Page</a>
+</div>
+
+<button onclick="button()">My Button</button>
+<div id="output"></div>
+<script>
+function button(){
+    document.getElementById("output").innerHTML= "it works"
+}
+
+</script>
+{%endblock%}
